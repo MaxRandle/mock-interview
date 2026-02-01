@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { SubmitEventHandler, useState } from "react";
 
-const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/";
+const POKEAPI_URL = "https://pokeapi.co/api/v2/pokemon/";
 // example "https://pokeapi.co/api/v2/pokemon/ditto"
 
 type Pokemon = {
@@ -21,7 +21,7 @@ export const PokemonForm = ({}) => {
   const [pokemonData, setPokemonData] = useState<Pokemon>();
 
   const fetchPokemonData = async (pokemonName: string) => {
-    const res = await fetch(POKEMON_URL + pokemonName);
+    const res = await fetch(POKEAPI_URL + pokemonName);
     const resJson = await res.json();
     console.log(resJson);
 
