@@ -14,6 +14,7 @@
   - You may use code snippets from the google AI search results
   - You may not paste any part of your code into the internet
   - You may paste error messages or debugging info into the internet
+  - You may install any node packages you like
 
   ASSESSMENT
   - There are many approaches to solving this, use whichever you think is best
